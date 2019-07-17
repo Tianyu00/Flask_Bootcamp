@@ -1,0 +1,33 @@
+h1{
+  color:blue;
+}
+
+li{
+  color:rgb(30,100,100);
+}
+
+h4{
+  color:rgba(13,90,140,0.5)
+}
+
+/* body{
+  background: url(puppy.jpg);   # or url
+  background-repeat: no-repeat;
+} */
+
+/* div{
+  background: pink;
+  border:orange;
+  border-width: thick;
+  border-style: dashed;
+} */
+
+div{
+  background: pink;
+  border:orange 5px dashed;
+}
+
+span{
+  background: red;
+  color: black;
+}

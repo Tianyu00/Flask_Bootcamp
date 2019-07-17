@@ -1,0 +1,13 @@
+/* class is for many elements */
+.firstDiv{
+  color:blue;
+}
+
+.secondDiv{
+  color:yellow
+}
+
+/* id is for single element */
+#singledout{
+  color:red;
+}
