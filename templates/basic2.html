@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>this is to print the list passed to html as html list</p>
+    <p>first print the list itself</p>
+    {{mylist}}
+    <ul>
+      {% for item in mylist %}
+      <!-- this 'mylist does not need bracktets
+      because now it can be passed just as text' -->
+      <li> {{item}}</li>
+      {% endfor %}
+
+      {% if 2 in mylist %}
+      <p>found '2'</p>
+      {% else %}
+      <p>did not find '2'</p>
+      {% endif %}
+
+      {% if user_logged_in %}
+      <p>welcome back, you are now logged in</p>
+      {% else %}
+      <p>please log in</p>
+      {% endif %}
+    </ul>
+  </body>
+</html>

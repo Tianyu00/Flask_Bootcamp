@@ -1,0 +1,13 @@
+{% extends 'e1_0.html' %}
+
+    {% block content %}
+
+    {% if problems_len == 0 %}
+    <p>name is legal</p>
+{% else %}
+    {% for item in problems %}
+    <p>{{item}}</p>
+    {% endfor %}
+{% endif %}
+
+    {% endblock %}

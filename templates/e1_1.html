@@ -1,0 +1,20 @@
+{% extends 'e1_0.html' %}
+
+
+    {% block content %}
+    <p>provide a name:</p>
+    <p>it needs to meet 3 requirements</p>
+    <ul>
+      <li>must have an upper case letter</li>
+      <li>must have an lower case letter</li>
+      <li>must have a number at the end</li>
+    </ul>
+
+    <form class="" action="{{url_for('result')}}">
+      <label for="name">name</label>
+      <input type="text" name="name">
+      <input type="submit" name="submit form">
+    </form>
+
+
+    {% endblock %}
