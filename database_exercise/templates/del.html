@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block contents %}
+
+<div class="jumbotron">
+  <p>enter puppy id to delete</p>
+  <form  method="post">
+    {{form.hidden_tag()}}
+    {{form.id.label}}{{form.id()}}
+    {{form.submit}}
+
+  </form>
+
+</div>
+
+
+
+{%endblock%}

@@ -1,0 +1,17 @@
+{% extends 'flask_database_view_base.html' %}
+{% block contents %}
+
+<div class="jumbotron">
+<h1>have a puppy that needs to be adopted?</h1>
+<p>add a new puppy to our databaseabse</p>
+<form method="POST">
+  {{form.hidden_tag()}}
+  {{form.name.label}}{{form.name()}}
+  {{form.submit()}}
+
+</form>
+</div>
+
+
+
+{%endblock%}
