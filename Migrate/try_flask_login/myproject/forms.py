@@ -11,8 +11,9 @@ class LoginForm(FlaskForm):
 class RegistrationForm(FlaskForm):
     email = StringField('Email', validators=[DataRequired(),Email()])
     username = StringField('username', validators=[DataRequired()])
-    password = PasswordField('password', validators=[DataRequired(),EqualTo('pass_confirm'),message = 'passwords must match'])
+    password = PasswordField('password', validators=[DataRequired(),EqualTo('pass_confirm',message='passwords must match')])
     pass_confirm = PasswordField('confirm password', validators=[DataRequired()])
+    submit = SubmitField('register')
     def check_email(self,field):
         if User.query.filter_by(email=field.data).first():
             raise ValidationError('your email has been registered')
