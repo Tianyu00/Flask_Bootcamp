@@ -1,0 +1,35 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<div class="jumbotron">
+<h1>puppy company blog</h1>
+</div>
+
+<div class="container">
+  {%for post in blog_posts.items %}
+  <div class="card">
+    <div class="card-body">
+      <h2> <a class='card-title' href="{{url_for('blog_posts.blog_post',blog_post_id=post.id)}}">{{post.title}}</a> </h2>
+      <a href="{{url_for('users.user_posts',username=post.author.username)}}">written by: {{post.author.username}}</a>
+      <p>published on: {{post.date.strftime('%Y-%m-%d')}}</p>
+      <a class='btn btn-primary' href="{{url_for('blog_posts.blog_post',blog_post_id=post.id)}}">Read blog post</a>
+    </div>
+  </div>
+{%endfor%}
+</div>
+
+<nav aria-label='page navigation example'>
+  <ul class='pagination justify-content-center'>
+    {%for page in blog_posts.iter_pages(left_edge=1, right_edge = 1,left_current=1,right_current=2)%}
+      {%if blog_posts.page == page%}
+        <li class='page-item disabled'><a class='page-link' href="url_for('core.index',username=username,page=page_num)">{{page}}</a></li>
+      {%else %}
+        <li class='page-item'><a class='page-link' href="url_for('core.index',username=username,page=page_num)">{{page}}</a></li>
+      {%endif%}
+    {%endfor%}
+  </ul>
+
+</nav>
+
+
+{%endblock%}

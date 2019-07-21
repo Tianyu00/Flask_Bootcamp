@@ -3,7 +3,7 @@
 
 
 
-python virtual environment
+**python virtual environment**\
 &nbsp; python -m virtualenv venv\
 &nbsp; . venv/bin/activate\
 &nbsp; pip install -r requirement.txt
@@ -56,9 +56,29 @@ Migrate\
 &nbsp; flash-dance.readthedocs.io\
 &nbsp; pip install Flask-Dance\
 &nbsp; flask OAuth with Google example: Migrate/OAuth_google_example folder\
-Large Project: Social Company Blog: Large_project_company_blog folder\
+Large Project: Social Company Blog: Large_project_blog folder\
 -. we will combine all the skills we've learned so far into a singular project.\
--. we'll create a company blog page, where multiple users can log in, create blog posts,
+&nbsp;&nbsp; we'll create a company blog page, where multiple users can log in, create blog posts,
  and update or delete their existing blog posts.\
--. also learn handling image files, dividing long pages into multiple pages (for posts),
+&nbsp;&nbsp; also learn handling image files, dividing long pages into multiple pages (for posts),
 using Bootstrap pop up modals\
+-. to run this website, go to the folder "Large_project_blog", run "python app.py" in terminal\
+&nbsp;&nbsp; install necessary packages if you need:\
+&nbsp; pip freeze > requirements.txt\
+Flask REST APIs: API folder\
+&nbsp;&nbsp; install: postman (app), Flask-Restful (pip install ~)
+-. first request: app.py\
+&nbsp;&nbsp; send request trough 'postman' software\
+-. CRUD REST basic: app2.py\
+-. API with authorization: app3.py\
+&nbsp;&nbsp; Flask-JWT (pip install Flask-JWT)\
+-. Flask REST Api with database: app4.py\
+deployment: deployment folder\
+-. deploy to Heroku\
+&nbsp;&nbsp; gunicorn (pip), HerokuCLI, git\
+&nbsp;&nbsp; deployed to webpage: https://flask-deployment-one.herokuapp.com\
+&nbsp;&nbsp; pip freeze > requirements.txt
+Payments with Stripe: payment folder\
+&nbsp;&nbsp; pip install --upgrade stripe\
+-. create online store: Shopify\
+**end of course**
