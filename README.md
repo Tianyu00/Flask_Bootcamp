@@ -1,5 +1,5 @@
 # Flask_Bootcamp
-This is a [course](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/) I learnt on Udenmy.
+This is a [course](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/) I learnt on Udemy.
 
 ##### python virtual environment
 ```
@@ -7,9 +7,7 @@ python -m virtualenv venv
 . venv/bin/activate
 pip install -r requirement.txt
 ```
-\
-\
-\
+
 ## flask basics
 basic routes, dynamic route\
 debug mode, debug console
